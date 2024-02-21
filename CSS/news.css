@@ -1,0 +1,10 @@
+.container{
+    margin-top: 100px;
+}
+.container .card{
+    margin-top: 25px;
+}
+.container .card div div img{
+    height: 100%;
+
+}

@@ -1,0 +1,505 @@
+body{
+background-color: linear-gradient(white,black);
+
+}
+.hero-section{
+    background-image: url(../assets/heroSectionBg.png);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+
+/*Carousel Cards Section*/
+
+/*start of animation 1*/
+@keyframes ani-one{
+    0%{
+        transform: translateX(33.33%);
+    }
+    11.66%{
+        transform: translateX(33.33%);
+    }
+
+
+    16.66%{
+        transform: translateX(0%);
+    }
+    28.33%{
+        transform: translateX(0%);
+    }
+
+    33.33%{
+        transform: translateX(-33.33%);
+    }
+    44.99%{
+        transform: translateX(-33.33%);
+    }
+
+    49.99%{
+        transform: translateX(-66.66%)
+    }
+    61.65%{
+        transform: translateX(-66.66%);
+    }
+
+    66.65%{
+        transform: translateX(-100%);
+    }
+    78.31%{
+        transform: translateX(-100%);
+    }
+
+    83.31%{
+        transform: translateX(-133.33%);
+    }
+    95%{
+        transform: translateX(-133.33%);
+    }
+
+    100%{
+        transform: translateX(-166.66%);
+    }
+}
+@keyframes ani-two{
+    0%{
+        transform: translateX(33.33%);
+    }
+    11.66%{
+        transform: translateX(33.33%);
+    }
+
+    16.66%{
+        transform: translateX(0%);
+    }
+    28.33%{
+        transform: translateX(0%);
+    }
+
+    33.33%{
+        transform: translateX(-33.33%);
+    }
+    44.99%{
+        transform: translateX(-33.33%);
+    }
+
+    49.99%{
+        transform: translateX(-66.66%)
+    }
+    50%{
+        display: hidden;
+    }
+    50.01%{
+        transform: translateX(133.33%);
+    }
+    50.02%{
+        display: flex;
+    }
+    61.65%{
+        transform: translateX(133.33%);
+    }
+
+    66.65%{
+        transform: translateX(100%);
+    }
+    78.31%{
+        transform: translateX(100%);
+    }
+
+    83.31%{
+        transform: translateX(66.66%);
+    }
+    95%{
+        transform: translateX(66.66%);
+    }
+
+    100%{
+        transform: translateX(33.33%);
+    }
+}
+/*end of animation 1*/
+
+/*start of animation 2*/
+@keyframes ani-three{
+    0%{transform: translateX(0%);}
+    11.66%{transform: translateX(0%);}
+
+    11.67%{display: hidden;}
+    11.68%{transform: translateX(250%);}
+    11.69%{display: flex;}
+    28.33%{transform: translateX(250%);}
+
+    33.33%{transform: translateX(200%);}
+    44.99%{transform: translateX(200%);}
+
+    49.99%{transform: translateX(150%);}
+    61.65%{transform: translateX(150%);}
+
+    66.65%{transform: translateX(100%);}
+    78.31%{transform: translateX(100%);}
+
+    83.31%{transform: translateX(50%);}
+    95%{transform: translateX(50%);}
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes ani-four{
+    0%{transform: translateX(0%);}
+    11.66%{transform: translateX(0%);}
+
+    16.66%{transform: translateX(-50%);}
+    28.33%{transform: translateX(-50%);}
+    
+    33.33%{transform: translateX(-100%);}
+    33.34%{display: hidden;}
+    33.35%{transform: translateX(100%);}
+    78.31%{transform: translateX(100%);}
+
+    83.31%{transform: translateX(50%);}
+    95%{transform: translateX(50%);}
+
+    100%{transform: translateX(0%);}
+}
+@keyframes ani-five{
+    0%{transform: translateX(0%);}
+    11.66%{transform: translateX(0%);}
+
+    16.66%{transform: translateX(-50%);}
+    28.33%{transform: translateX(-50%);}
+
+    33.33%{transform: translateX(-100%);}
+    44.99%{transform: translateX(-100%);}
+
+    49.99%{transform: translateX(-150%);}
+    61.65%{transform: translateX(-150%);}
+
+    66.65%{transform: translateX(-200%);}
+    66.66%{display: hidden;}
+    66.67%{transform: translateX(0%);}
+    66.68%{display: flex;}
+}
+.pop-ins-carousel{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.pop-ins-carousel .outer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pop-ins-carousel .outer-container div fieldset{
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 20px;
+}
+.pop-ins-carousel .outer-container div fieldset .image-container{
+    padding: 12px!important;
+    border-radius: 13%;
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+}
+.pop-ins-carousel .outer-container div fieldset .image-container img{
+    margin: 0px;
+    border-radius: 13%;
+}
+.pop-ins-carousel .outer-container div fieldset p{
+    padding: 0px 10px;
+}
+
+.pop-ins-carousel .row-1, .pop-ins-carousel .row-2, .pop-ins-carousel .row-3{
+    position: absolute;
+    top: 75px;
+}
+.pop-ins-carousel.carousel-1-lg .row-2{
+    translate: 66.66% 0 0;
+    animation-name: ani-one;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.pop-ins-carousel.carousel-1-lg .row-1{
+    translate: -33.33% 0 0;
+    animation-name: ani-two;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.carousel-2-md, .carousel-3-sm{
+    display: none;
+}
+/*for medium view*/
+@media only screen and (max-width: 1100px){
+    .carousel-1-lg{
+        display: none;
+    }
+    .carousel-3-sm{
+        display: none;
+    }
+    .carousel-2-md{
+        display: block;
+    }
+}
+.carousel-2-md{
+    position: relative;
+}
+.carousel-2-md .outer-container{
+    position: absolute;
+    left: 0;
+    top: 75px;
+}
+.carousel-2-md .outer-container.row-1{
+    translate: -100% 0 0;
+
+    animation-name: ani-three;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.carousel-2-md .outer-container.row-2{
+    animation-name: ani-four;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.carousel-2-md .outer-container.row-3{
+    translate: 100% 0 0;
+
+    animation-name: ani-five;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/*start of carousel 3 768*/
+@media only screen and (max-width:768px){
+    .carousel-2-md, .carousel-1-lg{
+        display: none;
+    }
+    .carousel-3-sm{
+        display: block;
+    }
+}
+.carousel-3-sm .outer-container{
+    width: 300%;
+    translate: -33.33% 0px;
+}
+.carousel-3-sm .outer-container.row-1{
+    translate: 66.66% 0;
+
+    animation-name: ani-one;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.carousel-3-sm .outer-container.row-2{
+    translate: -33.33% 0;
+
+    animation-name: ani-two;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/*End of carousel*/
+
+.advertisementvideo{
+    height: 300px;
+    background-color: rgb(13, 39, 70);
+}
+
+/*Start of cookie section*/
+.cookie .modal .modal-dialog, .cookie .modal{
+    width: 100%;
+}
+.cookie{
+    color: white;
+    width: 100%;
+}
+.cookie .modal{
+   background-color: rgba(8, 7, 59, 0.162);
+}
+.cookie .modal .modal-dialog .modal-content .modal-header{
+    background-color: rgb(26, 26, 26);
+}
+.cookie-title{
+    width: 100%;
+}
+.cookie-title h5{
+    font-weight: 700;
+}
+.cookie-buttons{
+    width: 100%;
+}
+.cookie-accept{
+    background-color: rgb(13, 39, 70);
+    border: 2px solid rgb(13, 39, 70);
+    color: #ffffff;
+}
+.cookie-buttons:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 39, 70);
+    color: rgb(13, 39, 70);
+}
+.cookie-necessary{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(177, 202, 255);
+    color: rgb(13, 39, 70);
+}
+.cookie-icon{
+    display: flex;
+    justify-content: center;
+    align-items: cetner;
+    padding: 0px;
+}
+.cookie-icon img{
+    width: 100%;
+}
+.cookie-setting-link{
+    color: #000000;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.cookie .modal .modal-dialog .modal-content .modal-body{
+    padding: 10px;
+}
+.cookie .modal .modal-dialog .modal-content .modal-body .row div p{
+    color: #000000;
+    padding-top: 15px;
+}
+
+.cookie-setting .modal .modal-dialog .modal-content{
+    background-color:  rgb(13, 39, 70);
+    color: white;
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-footer .apply-changes{
+    padding: 0px 10px;
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-footer button{
+    background-color: white;
+    border: 2px solid rgb(13, 39, 70);
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-footer button:hover{
+    background-color: rgb(13, 39, 70);
+    border: 2px solid #ffffff;
+    color: white;
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-body div{
+    padding: 5px 10px;
+}
+@media only screen and (max-width: 768px){
+    .cookie-icon, .cookie-icon img{display: none;}
+}
+
+/*advertisement section*/
+.ad-outer{
+    padding: 20px;
+}
+.advertisement{
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px -5px black;
+}
+.advertisement .ad-animation{
+    padding: 0px!important;
+    height: 250px;
+    position: relative;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -5px black;
+    overflow: hidden;
+}
+.advertisement .ad-animation div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.advertisement .ad-animation .ad-container1{
+    opacity: 0;
+    background-image: url(../assets/ad-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    animation-name: ad-animation1;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.advertisement .ad-animation .ad-container2{
+    opacity: 0;
+    background-image: url(../assets/ad-img-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+
+    animation-name: ad-animation2;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.advertisement .ad-animation .ad-container3{
+    opacity: 0;
+    background-image: url(../assets/ad-img-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+    animation-name: ad-animation3;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width:668px){
+    .ad-animation{
+        width: 100%!important;
+    }
+    .ad-text-outer{
+        width: 100%!important;
+    }
+}
+
+@keyframes ad-animation1{
+    0%{opacity: 1;}
+    33.33%{opacity: 1;}
+    43.33%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes ad-animation2{
+    0%{opacity: 0;}
+    33.33%{opacity: 0;}
+    43.33%{opacity: 1;}
+    66.66%{opacity: 1;}
+    76.66%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes ad-animation3{
+    0%{opacity: 1;}
+    10%{opacity: 0;}
+    66.66%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.advertisement .ad-text-outer{
+    margin-top: 30px;
+    width: 70%;
+}

@@ -1,0 +1,50 @@
+.content{
+    margin-top: 80px;
+    padding-left: 25px;
+}
+.content small{
+    color: rgb(91, 89, 89);
+}
+.content a{
+    text-decoration:none;
+    font-weight: 600;
+
+    color: black;
+}
+.content a:hover{
+    text-decoration:underline;
+    color: rgb(0, 63, 139);
+}
+.list{
+    list-style-type: square;
+}
+.scrollspy{
+    right: 0;
+    margin-top: 100px;
+    position: sticky;
+    bottom: 0;
+    padding-bottom: 30px;
+}
+.scrollspy ul{
+    list-style-type: none;
+}
+.scrollspy ul li{
+    padding-top: 15px;
+}
+.scrollspy ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+.scrollspy ul li a:hover{
+    padding: 1px;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px){
+    .scrollspy{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+}

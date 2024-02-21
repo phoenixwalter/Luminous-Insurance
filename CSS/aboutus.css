@@ -1,0 +1,286 @@
+/*.our-members {
+    width: 97%;
+    top: 75px;
+    position: relative;
+}
+.cover-imgs .row div img{
+    width: 80%;
+    margin-left: 30px;
+}
+.background {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -1; 
+    background-color: rgb(46, 66, 110);
+}
+img{
+    width: 100%;
+}
+.frontcard{
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    z-index: 1; 
+    background-color: rgb(21, 36, 69);
+    color: white;
+}
+.frontcard .row div span{
+    text-align: center;
+}
+.timeline{
+    margin-top: 25px;
+    position: relative;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(219, 219, 219);
+    width: 4px;
+    border-radius: 2px;
+}
+.timeline-item{
+    width: 50%;
+    position: relative;
+}
+.timeline-item::after{
+    content: '';
+    position: absolute;
+    top: 70px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(46, 66, 110);
+    border-radius: 50%;
+    z-index: 1;
+}
+.right{
+    left: 50%;
+    padding: 0px 20px 0px 50px;
+}
+.left{
+    left: 0;
+    padding: 0px 50px 0px 20px;
+}
+.right::after{
+    left: -5px;
+}
+.left::after{
+    right: -10px;
+}
+
+@media only screen and (max-width:768px){
+    .timeline-item{
+        width: 90%;
+    }
+    .right, .left{
+        left: 0;
+        padding: 0px 20px 0px 50px;
+    }
+    .timeline::after{
+        left: 0px;
+    }
+    .left::after,.right::after{
+        left: -5px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .items .items-list .event-date{
+        top: 35px;
+    }
+    .timeline .items .items-list{
+        padding-top: 75px;
+    }
+}
+*/
+body{
+    padding: 0px;
+}
+.our-members{
+    margin-top: 125px;
+}
+.our-members *{
+    text-align: center;
+}
+.member-container{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px 50px;
+}
+.member-container div{
+    width: 33.33%;
+}
+.member-container div .inner-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    border-radius: 30px;
+}
+.member-container div .inner-container .members-img{
+    /*background-color: rgb(225, 186, 123);*/
+    background-color: rgb(167, 162, 201);
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+.member-container div .inner-container .members-img img{
+    width: 100%;
+}
+.member-container div .inner-container .members-text{
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    padding: 0 30px;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.member-container div .inner-container .members-text h2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    padding: 10px;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.member-container div .inner-container .members-text p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0px 10px;
+    opacity: 0;
+    bottom: 100%;
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+/*
+.member-container .col-three .inner-container .members-text{
+    bottom: -34px;
+}
+*/
+.member-container div .inner-container .members-img::after{
+    content: '';
+    position: absolute;
+    left: 0; top: 75%; right: 0; bottom: 0;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.member-container div .inner-container:hover .members-img::after{
+    top: 0;
+}
+.member-container div .inner-container:hover{
+    scale: 1.05;
+}
+.member-container div .inner-container:hover .members-text h2{
+    padding-bottom: 75px;
+}
+.member-container div .inner-container:hover .members-text p{
+    opacity: 1;
+}
+.place-holder{
+    display: none;
+}
+@media only screen and (max-width: 960px) and (min-width: 577px){
+    .member-container .col-one,
+    .member-container .col-two{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .member-container .col-three{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .member-container .col-three .inner-container{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .member-container div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .member-container div .inner-container{
+        width: 100%;
+    }
+    .place-holder{
+        display: block;
+        height: 60px;
+    }
+}
+@media only screen and (max-width:768px){
+    .event-date{
+        top: -50px;
+    }
+    .timeline .items{
+        border: none;
+    }
+    .timeline .items .items-list{
+        margin-top: 100px;
+    }
+}
+ 
+/*timeline section*/
+.timeline{
+    margin-top: 50px;
+}
+.timeline .items{
+    border-top: 3px solid gray;
+}
+.timeline .items .items-list{
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    margin-right: 0px;
+}
+.timeline .items .items-list::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    border-right: 2px dashed gray;
+    height: 35px;
+}
+.event-date{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.bg{
+    background-color: gray;
+    padding: 5px;
+}

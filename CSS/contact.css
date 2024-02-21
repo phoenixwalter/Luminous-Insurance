@@ -1,0 +1,73 @@
+.hero{
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+}
+.title{
+   padding-top: 100px; padding-bottom: 25px;
+   color: #fff;
+}
+.hero .card{
+    margin-top: 25px;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.card input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(229, 238, 250);
+}
+.card button{
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.contact-cards{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contact-cards .row{
+    width: 100%;
+}
+.contact-cards .outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.contact-cards .card{
+    width: 30%;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+.contact-cards .card .bi{
+    font-size: 40px;
+    color: rgb(34, 51, 129);
+}
+@media only screen and (max-width: 880px){
+    .contact-cards .outer-container .card{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+/*map section*/
+.Location{
+    margin-top: 15px;
+}
+.Location h2{
+    color: black;
+    text-align: center;
+}
+.google-map{
+    margin-top: 45px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}

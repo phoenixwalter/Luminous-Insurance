@@ -1,0 +1,45 @@
+p{
+    font-weight: 600;
+}
+h2{
+   padding-top: 40px; padding-bottom: 25px;
+   color: #000000;
+}
+.hero .card{
+    margin-top: 25px;
+    padding: 25px;
+    display: flex;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.card input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(229, 238, 250);
+}
+.card button{
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 50px 10px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(229, 238, 250);
+}
+i{
+    padding-left: 5px; padding-right: 10px;
+}
+h2 i{
+    color: rgb(152, 152, 152);
+}

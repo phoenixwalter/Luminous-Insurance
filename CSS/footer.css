@@ -1,0 +1,83 @@
+.footer-section{
+    background-color: #191919;
+    margin-top: 100px;
+    color: #ffffff;
+    padding-top: 50px;
+}
+.footer-section .row .Company-Info .row div h3{
+    padding-top: 25px;
+    color: rgb(238, 238, 238);
+    text-shadow: 0px 0px 10px white;
+}
+.footer-section div div div div ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-section b{
+   color: #8b8a8a;
+}
+.footer-section div div div div ul li a:hover{
+    text-decoration: underline;
+}
+.footer-section div div div div ul{
+    list-style-type: none;
+}
+.pages ul, .famousinsurances ul{
+    list-style-type: none;
+}
+.pages ul a, .famousinsurances ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.famousinsurances ul li a:hover{
+    text-decoration: underline;
+}
+.footer-btn:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+    transform: scale(1.05);
+    color: #ffffff;
+}
+.footer-btn{
+    background-color: rgb(46, 66, 110)!important;
+    color: #ffffff;
+    
+    transition-property: transform, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    margin-top: 25px;
+}
+.footer-btn a{
+    font-weight: 600;
+    color: #333;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.policies{
+    text-align: center;
+    padding-top: 15px;
+}
+.policies div a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.policies div a:hover{
+    text-decoration: underline;
+}
+.copyright p{
+    text-align: center;
+    padding-top: 25px; padding-bottom: 35px;
+}
+@media only screen and (max-width: 260px){
+    .footer-section .row .Company-Info .row div{
+         width: 100%;
+    }
+}
+hr{
+    color: black;
+}
+/*End of Footer section*/

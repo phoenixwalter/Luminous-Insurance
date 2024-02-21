@@ -1,0 +1,39 @@
+.introduction{
+    margin-top: 60px;
+}
+
+.cover-img img{
+    width: 70%;
+    margin-left: 30px;
+}
+.table{
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.table table{
+    width: 100%;
+    padding: 25px;
+
+}
+table, th, td {
+    border:1px solid rgb(165, 165, 165);
+    padding-left: 25px;
+  }
+.empty{
+    text-align: center;
+}
+.details ul{
+    list-style-type: square;
+}
+.partners{
+    margin-bottom: 25px;
+}
+.partners .row div span img{
+    width: 70px;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    background-color:none;
+    border: none;
+}

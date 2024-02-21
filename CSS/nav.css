@@ -1,0 +1,233 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.411);
+    box-shadow: 0px 0px 10px rgb(46, 46, 46);
+}
+.navbar-brand{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-brand::before{
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 7px rgb(255, 255, 255);
+    z-index: -1;
+}
+.navbar-brand h4{
+    margin: 0;
+    margin-left: 20px;
+    color: rgb(238, 238, 238);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.navbar-icon{
+    display: none;
+}
+.dropdown-toggler ul{
+    background-color: rgba(0, 0, 0, 0.76);
+    transform: translateX(-105px);
+}
+.dropdown-toggler ul li a{
+    text-shadow: 0px 0px 0px black!important;
+}
+.dropdown-toggler ul li a:hover{
+    text-shadow: 0px 0px 10px white!important;
+    background-color: rgba(0, 0, 0, 0.100);
+}
+.dropdown-toggler a{
+    color: white!important;
+}
+.dropdown-toggler a:hover{
+    text-shadow: 0px 0px 10px white;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+}
+.nav-item:not(:first-child){
+    margin-left: 20px;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item a{
+    color: white!important;
+    font-weight: 500;
+}
+.nav-item:hover a{
+    text-shadow: 0px 0px 10px white;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.nav-item:hover::after{
+    transform: scaleX(1);
+}
+.account-section{
+    text-decoration: none;
+    color: black;
+}
+.account-section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.account-section div img{
+    width: 30px;
+}
+.account-section div p{
+    margin: 0px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 400;
+}
+/*removing Text from brand and account sections*/
+@media only screen and (max-width: 847px){
+    .navbar a div p{
+        display: none;
+    }
+    .navbar-brand h4{
+        display: none;
+    }
+}
+/*for small screen sizes*/
+@media only screen and (max-width: 767px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar .navbar-brand{
+        justify-self: left;
+    }
+    .navbar .offcanvas{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .navbar .offcanvas .offcanvas-body{
+        width: 100%;
+        display: block;
+    }
+    .navbar .offcanvas .offcanvas-body ul li{
+        display: inline!important;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        width: 100px;
+    }
+    .navbar .offcanvas .offcanvas-body ul .dropdown,
+    .navbar .offcanvas .offcanvas-body ul .dropdown *{
+        display: none;
+        margin: 0;
+    }
+    .navbar .offcanvas .offcanvas-body ul li::after{
+        bottom: 0;
+        transform-origin: 0 50% 0;
+    }
+    .navbar .offcanvas .offcanvas-header{
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 14px 30px 14px 30px;
+    }
+    .navbar .offcanvas .offcanvas-header button{
+        background-color: white;
+        border: none;
+        box-shadow: none!important;
+    }
+    .navbar .account-section{
+        margin-right: 25px;
+    }
+}
+.navbar .navbar-toggler{
+    border-radius: 0px;
+    box-shadow: none!important;
+}
+/*End of nav-bar css*/
+/*Account Section Modal css*/
+.acc-sign-up .modal .modal-dialog .modal-content{
+    background-color: #ffffff;
+}
+.modal-title, .link-to-signin, .link-to-signup{
+    text-align: center;
+}
+.link-to-signin a, .link-to-signup a{
+  text-decoration: none;
+  font-weight: 600;
+}
+.link-to-signin a:hover, .link-to-signup a:hover{
+    cursor: pointer;
+}
+.form-background {
+    margin: 0px auto;
+    width: 100%;
+    width: 400px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+.form-background-inner{
+    padding: 40px;
+}
+.input-data{
+    margin-bottom: 20px;
+}
+.input-data input {
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+    padding: 5px 15px;
+    border: 1px solid rgba(159, 157, 157, 0.461);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.submit-btn{
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+    padding: 5px 15px;
+    border: 1px solid rgba(159, 157, 157, 0.461);
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    
+}
+.links{
+    text-align: center;
+    margin-top: 10px;
+}
+.links span a {
+    color:  rgb(107, 107, 107);
+    font-weight: 600;
+    padding: 10px;
+}

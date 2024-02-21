@@ -1,0 +1,71 @@
+.content{
+    margin-top: 80px;
+    padding-left: 25px;
+ }
+.content small{
+    color: rgb(91, 89, 89);
+}
+.content a{
+    text-decoration:none;
+    font-weight: 600;
+
+    color: black;
+}
+.content a:hover{
+    text-decoration:underline;
+    color: rgb(0, 63, 139);
+
+}
+.content i{
+    font-weight: 400;
+    text-decoration: underline;
+}
+.scrollspy{
+    margin-top: 80px;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 30px;
+}
+.scrollspy ul{
+    list-style-type: none;
+}
+.scrollspy ul li{
+    padding-top: 15px;
+}
+.scrollspy ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+.scrollspy ul li a:hover{
+    padding: 2px;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 881px){
+    .scrollspy{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+}
+.cookie-setting .modal .modal-dialog .modal-content{
+    background-color:  rgb(13, 39, 70);
+    color: white;
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-footer .apply-changes{
+    padding: 0px 10px;
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-footer button{
+    background-color: white;
+    border: 2px solid rgb(13, 39, 70);
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-footer button:hover{
+    background-color: rgb(13, 39, 70);
+    border: 2px solid #ffffff;
+    color: white;
+}
+.cookie-setting .modal .modal-dialog .modal-content .modal-body div{
+    padding: 5px 10px;
+}
