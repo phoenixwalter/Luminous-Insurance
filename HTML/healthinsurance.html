@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance | Luminous Insurance</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/insurances.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+<body>
+             <!--Start of Navigation bar-->
+    <nav class="navbar navbar-expand-md">
+        <div class="navbar-brand order-sm-1"><img src="../assets/logo.png" alt="fileFailedToLoad"><h4>Luminous</h4></div>
+        <button type="button" class="navbar-toggler order-sm-4" data-bs-toggle="offcanvas" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start order-2" id="mainNav">
+            <div class="offcanvas-header">
+                <h3>Luminous Insurance</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body order-sm-2">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="dropdown dropdown-toggler">
+                        <a href="#" class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="homeinsurance.html" class="dropdown-item">Home insurance</a></li>
+                            <li><a href="fireinsurance.html" class="dropdown-item">Fire insurance</a></li>
+                            <li><a href="healthinsurance.html" class="dropdown-item">Health insurance</a></li>
+                            <li><a href="lifeinsurance.html" class="dropdown-item">Life insurance</a></li>
+                            <li><a href="disabilityinsurance.html" class="dropdown-item">Disability insurance</a></li>
+                            <li><a href="autoinsurance.html" class="dropdown-item">Auto insurance</a></li>
+                            <li><a href="travelinsurance.html" class="dropdown-item">Travel insurance</a></li>
+                            <li><a href="petinsurance.html" class="dropdown-item">Pet insurance</a></li>
+                            <li><a href="educationinsurance.html" class="dropdown-item">Education insurance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="account-section order-sm-3 ms-auto"  data-bs-toggle="modal" data-bs-target="#sign-up">        
+            <div>
+                <p>Sign Up</p>
+                <img src="../assets/accountIcon.png " alt="fileFailedToLoad">
+            </div>
+        </a>
+    </nav>
+    <!--end of Navigation bar-->
+    <!--Start of Accond-Section modal-->
+    <div class="acc-sign-up">
+        <div class="modal fade"  id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="SignUp">
+                            <h1 class="modal-title">Sign Up</h1>
+                            <p class="link-to-signin">Already have an account? <a  data-bs-toggle="modal" data-bs-target="#sign-in">Sign In</a></p>
+                            <div class="form-background">
+                                <div class="form-background-inner">
+                                    <form action="#">
+                                        <div class="input-data">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" required>
+                                        </div>
+                                        <div class="input-data">
+                                            <label for="password">Choose a password</label>
+                                            <input type="password" name="password" required>
+                                        </div>
+                                        <div class="input-data">
+                                            <label for="password">Confirm password</label>
+                                            <input type="password" name="password" required>
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="submit" value="Register" class="submit-btn">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <span><a href="index.html">© 2024 Luminous</a></span>
+                                <span><a href="privacypolicy.html">Privacy Policy</a></span>
+                                <span><a href="termofuse.html">Terms of Use</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Start of Accond-Section modal 2-->
+    <div class="acc-sign-in">
+        <div class="modal fade"  id="sign-in" data-bs-backdrop="static" data-bs-keyboard="false" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="SignUp">
+                            <h1 class="modal-title">Sign In</h1>
+                            <p class="link-to-signup">Don't have an account? <a  data-bs-toggle="modal" data-bs-target="#sign-up">Sign Up</a></p>
+                            <div class="form-background">
+                                <div class="form-background-inner">
+                                    <form action="#">
+                                        <div class="input-data">
+                                        <label for="email">Email (or) Username</label>
+                                        <input type="email" name="email" required>
+                                        </div>
+                                        <div class="input-data">
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" required>
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="submit" value="Log In" class="submit-btn">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <span><a href="index.html">© 2024 Luminous</a></span>
+                                <span><a href="privacypolicy.html">Privacy Policy</a></span>
+                                <span><a href="termofuse.html">Terms & Conditions</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Nav-->
+
+    <div class="container-fluid">
+        <div class="introduction">
+            <h1>Health Insurance</h1>
+            <p>
+                Protecting your health is first and foremost, as unexpected medical issues can arise at any time,
+                necessitating potentially high-cost healthcare. With Luminous, we assured you that you don't need to
+                be concerned about the financial burden of medical expenses, as we provide comprehensive coverage
+                for your treatment fees.
+            </p>
+            <hr>
+            <div class="row col-md-12">
+                <div class="cover-img col-md-4">
+                    <img src="../assets/healthInsurance.jpg" alt="fileFailedToLoad">
+                </div>
+                <div class="intro-content col-md-8">
+                    
+                    <div class="information">
+                        <p><b>Coverage Duration: </b>1 Year</p>
+                        <br>
+                        <p><b>Premium amount: </b>Approximately, 10,000,000 MMK to 50,000,000 MMK (Annually) <br>
+
+                                                  416,666.7 MMK to 2,500,000 MMK (Monthly) </p>
+                        <br>    
+                        <p><b>Policy Duration: </b>We offer appropriate coverage for designated medical treatment expenses, and in the unfortunate events of Total Permanent Disability (TPD) or the policyholder's death, we provide Lump Sum Payment.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <h4>Health Insurance Benefits</h4>
+        </div>
+        <div class="table d-flex container-fluid">
+            <table class="details">
+            <tr>
+                <th>No.</th>
+                <th>Benefit Types</th>
+                <th>Inclusions</th>
+                <th>Benefit Amount</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Outpatient Benefits</td>
+                <td>
+                    <ul>
+                        <li>Diagnostic tests</li>
+
+                        <li>Prescription medications</li>
+                            
+                        <li>Emergency Ambulance Services</li>
+                            
+                        <li>(Ambulance charges)</li>
+                    </ul>
+                </td>
+                <td>1,000,000 MMK (Maximum) </td>
+                
+            <tr>
+                <td>2</td>
+                <td>Hospitalization Benefits</td>
+                <td>
+                    <ul>
+                        <li>Inpatient hospital stays</li>
+
+                        <li> Medications administered in the hospital</li>
+                            
+                        <li>(Ambulance charges)</li>
+                    </ul>
+                </td>
+                <td>5,000,000 (Maximum) </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Surgical Benefits </td>
+                <td>
+                    <ul>
+                        <li>Expenses for various surgeries and procedures</li>
+
+                        <li>Surgeon's fees</li>
+                            
+                        <li>Operating room expenses</li>
+                            
+                        <li>(Ambulance charges)</li>
+                    </ul>
+                </td>
+                <td>10,000,000 MMK (Maximum)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Total Permanent Disability (TPD) Benefit  </td>
+                <td>
+                    <ul>
+                        <li>Sensory disability</li>
+
+                        <li>Physical Disability</li>
+                            
+                        <li>Neurological Disability</li>
+                    </ul>
+                </td>
+                <td>Lump sum payment </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Death Benefit</td>
+                <td class="empty">-</td>
+                <td>Lump sum payment </td>
+            </tr>
+            </table>
+        </div>
+        <div class="partners container-fluid">
+            <h4>Our Trusted Partners</h4>
+            <p>Any medications or treatments under our partnership hospitals will not be limited to any coverage amount along with specialized care. </p>
+            <div class="row">
+                <div class="col-md-9">
+                    <b>Local Hospitals</b>
+                    <span><img src="../assets/Bumrungrad.jpg" alt="fileFailedToLoad"></span>
+                    <span><img src="../assets/SOS.jpg" alt="fileFailedToLoad"></span>
+                    <span><img src="../assets/sakura.png" alt="fileFailedToLoad"></span>
+                    <b>International Hospitals</b>
+                    <span><img src="../assets/BumrungradInternational.jpg" alt="fileFailedToLoad"></span>
+                </div>
+            </div>
+        </div>
+        <div class="details container-fluid">
+            <div class="accordion" id="accordionMain">
+                <div class="accordion-item border-bottom">
+                    <div class="accordion-head">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordionOne">
+                            <b>What we don’t cover?</b>
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="accordionOne" data-bs-parent="#accordionMain">
+                        <div class="accordion-body col-md-10 col-sm-8 col-lg-10">
+                            <p><b>Cosmetic Surgeries>></b>We do not assume responsibility for non-medical procedures, such as facial rejuvenation, 
+                                implant procedures, and fat reduction,which are undertaken for cosmetic purposes. <br><br>
+                                <b>Consumption of Intoxicating substances >> </b>We do not reimburse medical expenses associated with the use of 
+                                intoxicating substances, including alcohol or drugs. <br><br>
+                                <b>Minor Dental care>></b> Routine dental check-ups or cleanings, categorized as "minor treatments," 
+                                are not eligible for coverage under our health insurance policy
+                                unless hospitalization is deemed necessary. 
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion" id="accordionMain">
+                <div class="accordion-item border-bottom">
+                    <div class="accordion-head">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordionTwo">
+                            <b>How does it work?</b>
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="accordionTwo" data-bs-parent="#accordionMain">
+                        <div class="accordion-body col-md-10 col-sm-8 col-lg-10">
+                            <p>We provide the exact coverage amount according to the table for the listed medical treatments throughout the validation period of the policy contract. <br><br>
+                            <b><i>* Premiums are non-refundable in case when the listed medical issues didn't occur to the insured person.</i></b></p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion" id="accordionMain">
+                <div class="accordion-item border-bottom">
+                    <div class="accordion-head">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordionThree">
+                            <b>Requirements</b>
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="accordionThree" data-bs-parent="#accordionMain"> <!--accordion body-->
+                        <div class="accordion-body col-md-10 col-sm-8 col-lg-10">
+                            <p>To qualify for health insurance coverage, certain prerequisites must be met. </p>
+                            <ul>
+                                <li>Please provide well-captured images of your birth certificate and national identification card (front and back). <span data-bs-toggle="tooltip" data-bs-title=" To verify your identity."><i class="bi bi-question-lg"></i></span></li>
+                                <li>Additionally, submit PDF files containing records from your significant past medical treatments,<br> blood test results, and urinalysis results.  <span data-bs-toggle="tooltip" data-bs-title=" To determind the best policy according to your medical conditions."><i class="bi bi-question-lg"></i></span></li>
+                                <li>Lastly, complete our health questionnaire form detailing your current health conditions.  <span data-bs-toggle="tooltip" data-bs-title=" To receives more specific detail directly from you."><i class="bi bi-question-lg"></i></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <hr>
+        <a href="healthform.html"><button class="btn btn-outline-info">Enroll for Health Insurance Now!</button> </a>
+    </div>
+    <!--Start of Footer Section-->
+    <div class="footer-section container-fluid">
+        <div class="row">
+            <div class="col-md-6 row">
+                <div class="col-sm-6 Company-Info">
+                    <div class="row">
+                        <div class="col-4"><img src="../assets/logo.png" alt="fileFailedToLoad" class="col-12"></div>
+                        <div class="col-8"><h3>Luminous</h3>
+                        <a href="services.html"><button class="btn footer-btn">Get Insure Now!</button></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 pages">
+                    <ul>
+                        <li><b>LINKS</b></li>
+                        <li class="mt-3"><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-md-6 row">
+                <div class="col-sm-6 footer-products">
+                    <div class="famousinsurances">
+                        <ul>
+                            <li><b>FAMOUS PRODUCTS</b></li>
+                            <li class="mt-3"><a href="lifeinsurance.html">Life Insurance</a></li>
+                            <li><a href="healthinsurance.html">Health Insurance</a></li>
+                            <li><a href="homeinsurance.html">Home Insurance</a></li>
+                            <li><a href="autoinsurance.html">Auto Insurance</a></li>
+                            <li><a href="travelinsurance.html">Travel Insurance</a></li>
+                            <li><a href="disabilityinsurance.html">Disability insurance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 contact">
+                    <div class="col-12">
+                        <b>CONTACT US</b><p class="mt-3"><i class="bi bi-geo-alt"></i>836 Ngamoeyeik 2nd street, block 3, Thingangyun Tsp<br><i class="bi bi-telephone"></i>09 792 814 564, 09 767 104 938<br><i class="bi bi-envelope-at"></i><a href="mailto:luminousinsurance1991@gmail.com">luminousinsurance1992<br>@gmail.com</a></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><a target="_blank" href="https://www.facebook.com/people/Luminous-Insurance/61556517337690/?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a></div>
+                        <div class="col-4"><a target="_blank" href="https://www.youtube.com/@LuminousInsurance"><i class="bi bi-youtube"></a></i></div>
+                        <div class="col-4"><a target="_blank" href="https://www.instagram.com/luminous_insurance1992?igsh=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row policies">
+            <div class="col-4"><a href="termofuse.html" target="_blank"><p>Terms of Use</p></a></div>
+            <div class="col-4"><a href="privacypolicy.html" target="_blank"><p>Privacy Policy</p></a></div>
+            <div class="col-4"><a href="cookiepolicy.html" target="_blank"><p>Cookie Policy</p></a></div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© 2024 Luminous Insurance | All Rights Reserved.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+
+        const tooltips=document.querySelectorAll('[data-bs-toggle="tooltip"]')
+
+        tooltips.forEach(t=>{new bootstrap.Tooltip(t)})
+
+    </script>
+</body>
+</html>

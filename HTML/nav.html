@@ -1,0 +1,128 @@
+    <!--Start of Navigation bar-->
+    <nav class="navbar navbar-expand-md">
+        <div class="navbar-brand order-sm-1"><img src="../assets/logo.png" alt="fileFailedToLoad"><h4>Luminous</h4></div>
+        <button type="button" class="navbar-toggler order-sm-4" data-bs-toggle="offcanvas" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start order-2" id="mainNav">
+            <div class="offcanvas-header">
+                <h3>Luminous Insurance</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body order-sm-2">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="dropdown dropdown-toggler">
+                        <a href="#" class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="homeinsurance.html" class="dropdown-item">Home insurance</a></li>
+                            <li><a href="fireinsurance.html" class="dropdown-item">Fire insurance</a></li>
+                            <li><a href="healthinsurance.html" class="dropdown-item">Health insurance</a></li>
+                            <li><a href="lifeinsurance.html" class="dropdown-item">Life insurance</a></li>
+                            <li><a href="disabilityinsurance.html" class="dropdown-item">Disability insurance</a></li>
+                            <li><a href="autoinsurance.html" class="dropdown-item">Auto insurance</a></li>
+                            <li><a href="travelinsurance.html" class="dropdown-item">Travel insurance</a></li>
+                            <li><a href="petinsurance.html" class="dropdown-item">Pet insurance</a></li>
+                            <li><a href="educationinsurance.html" class="dropdown-item">Education insurance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="account-section order-sm-3 ms-auto"  data-bs-toggle="modal" data-bs-target="#sign-up">        
+            <div>
+                <p>Sign Up</p>
+                <img src="../assets/accountIcon.png " alt="fileFailedToLoad">
+            </div>
+        </a>
+    </nav>
+    <!--end of Navigation bar-->
+    <!--Start of Accond-Section modal-->
+    <div class="acc-sign-up">
+        <div class="modal fade"  id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="SignUp">
+                            <h1 class="modal-title">Sign Up</h1>
+                            <p class="link-to-signin">Already have an account? <a  data-bs-toggle="modal" data-bs-target="#sign-in">Sign In</a></p>
+                            <div class="form-background">
+                                <div class="form-background-inner">
+                                    <form action="#">
+                                        <div class="input-data">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" required>
+                                        </div>
+                                        <div class="input-data">
+                                            <label for="password">Choose a password</label>
+                                            <input type="password" name="password" required>
+                                        </div>
+                                        <div class="input-data">
+                                            <label for="password">Confirm password</label>
+                                            <input type="password" name="password" required>
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="submit" value="Register" class="submit-btn">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <span><a href="index.html">© 2024 Luminous</a></span>
+                                <span><a href="privacypolicy.html">Privacy Policy</a></span>
+                                <span><a href="termofuse.html">Terms of Use</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Start of Accond-Section modal 2-->
+    <div class="acc-sign-in">
+        <div class="modal fade"  id="sign-in" data-bs-backdrop="static" data-bs-keyboard="false" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="SignUp">
+                            <h1 class="modal-title">Sign In</h1>
+                            <p class="link-to-signup">Don't have an account? <a  data-bs-toggle="modal" data-bs-target="#sign-up">Sign Up</a></p>
+                            <div class="form-background">
+                                <div class="form-background-inner">
+                                    <form action="#">
+                                        <div class="input-data">
+                                        <label for="email">Email (or) Username</label>
+                                        <input type="email" name="email" required>
+                                        </div>
+                                        <div class="input-data">
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" required>
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="submit" value="Log In" class="submit-btn">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <span><a href="index.html">© 2024 Luminous</a></span>
+                                <span><a href="privacypolicy.html">Privacy Policy</a></span>
+                                <span><a href="termofuse.html">Terms & Conditions</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Nav-->
