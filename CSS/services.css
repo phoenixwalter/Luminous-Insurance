@@ -1,6 +1,7 @@
 body{
     width: 100%;
     position: relative;
+    background-color: black;
 }
 .cards-section{
     margin-top: 25px;
